@@ -1,12 +1,12 @@
-package com.pedromassango.delyo
+package com.pedromassango.delyo.ui
 
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.GravityCompat
+import com.pedromassango.delyo.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,15 +18,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupNavigationDrawer() {
-        val drawerToggle = object: ActionBarDrawerToggle(this, drawer_layout, R.string.open, R.string.close){
+        val drawerToggle = object : ActionBarDrawerToggle(
+            this, drawer_layout, R.string.open, R.string.close) {
             val scaleFactor = 5F
 
             override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
                 super.onDrawerSlide(drawerView, slideOffset)
                 val slideX = (drawerView.width * slideOffset)
                 content.translationX = slideX
-                content.scaleX = (1 - slideOffset/scaleFactor)
-                content.scaleY = (1 - slideOffset/scaleFactor)
+                content.scaleX = (1 - slideOffset / scaleFactor)
+                content.scaleY = (1 - slideOffset / scaleFactor)
+
             }
 
             override fun onDrawerOpened(drawerView: View) {
