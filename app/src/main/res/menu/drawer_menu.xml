@@ -4,10 +4,10 @@
     <item android:title=" " />
 
     <item android:title="Search"
-        android:icon="@drawable/ic_menu"/>
+        android:icon="@drawable/ic_search"/>
 
-    <item android:title="Backet"
-        android:icon="@drawable/ic_menu"/>
+    <item android:title="Basket"
+        android:icon="@drawable/ic_shopping_cart"/>
 
     <item android:title="Orders"
         android:icon="@drawable/ic_menu"/>
