@@ -11,13 +11,14 @@
     <RelativeLayout
         android:id="@+id/content"
         android:paddingTop="16dp"
-        android:background="@drawable/rounded_corners_default"
+        android:background="@color/app_background"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/v1"
+            app:elevation="6dp"
             android:layout_alignParentTop="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -48,6 +49,7 @@
             android:id="@+id/bottom_navigation_view"
             android:layout_alignParentBottom="true"
             app:menu="@menu/bottom_navigation_menu"
+            app:elevation="1dp"
             app:labelVisibilityMode="unlabeled"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
