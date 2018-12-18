@@ -48,6 +48,7 @@
             android:id="@+id/bottom_navigation_view"
             android:layout_alignParentBottom="true"
             app:menu="@menu/bottom_navigation_menu"
+            app:labelVisibilityMode="unlabeled"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
