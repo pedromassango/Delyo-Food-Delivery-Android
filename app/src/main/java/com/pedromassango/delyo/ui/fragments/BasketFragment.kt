@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 
-class HomeFragment: Fragment() {
+class BasketFragment: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return TextView(context).apply {
-            text = "Hello Home"
+            text = "Hello Basket"
         }
     }
 }

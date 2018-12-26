@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pedromassango.delyo.ui.fragments.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.pedromassango.delyo.ui.fragments.AccountFragment"
+        android:label="AccountFragment" />
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.pedromassango.delyo.ui.fragments.BasketFragment"
+        android:label="BasketFragment" />
+    <fragment
+        android:id="@+id/restaurantFragment"
+        android:name="com.pedromassango.delyo.ui.fragments.RestaurantFragment"
+        android:label="RestaurantFragment" />
+</navigation>

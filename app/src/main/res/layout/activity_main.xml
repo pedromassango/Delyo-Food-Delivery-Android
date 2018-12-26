@@ -31,19 +31,15 @@
                 app:navigationIcon="@drawable/ic_menu" />
         </com.google.android.material.appbar.AppBarLayout>
 
-        <FrameLayout
+        <fragment
+            android:id="@+id/nav_host_fragment"
             android:layout_below="@id/v1"
             android:layout_above="@id/bottom_navigation_view"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <TextView
-                style="@style/Base.TextAppearance.AppCompat.Display1"
-                android:layout_gravity="center"
-                android:text="@string/app_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </FrameLayout>
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation_view"
