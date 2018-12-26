@@ -18,8 +18,8 @@
 
 
     <item android:title="Settings"
-        android:icon="@drawable/ic_menu"/>
+        android:icon="@drawable/ic_settings"/>
 
     <item android:title="Support"
-        android:icon="@drawable/ic_menu"/>
+        android:icon="@drawable/ic_support"/>
 </menu>
